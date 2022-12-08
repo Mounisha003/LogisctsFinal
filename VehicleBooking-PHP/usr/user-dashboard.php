@@ -137,7 +137,7 @@
                     <td><?php echo $cnt;?></td>
                     <td><?php echo $row->v_name;?></td>
                     <td><?php echo $row->v_reg_no;?></td>
-                    <td><?php echo $row->v_pass_no;?></td>
+                    <td><?php echo $row->v_ton;?></td>
                     <td><?php echo $row->v_driver;?></td>
                     <td><?php if($row->v_status == "Available"){ echo '<span class = "badge badge-success">'.$row->v_status.'</span>'; } else { echo '<span class = "badge badge-danger">'.$row->v_status.'</span>';}?></td>
                     

@@ -8,7 +8,7 @@
   if(isset($_POST['add_veh']))
     {
 
-            $v_name=$_POST['v_name'];
+            
             $v_reg_no = $_POST['v_reg_no'];
             $v_category=$_POST['v_category'];
             $v_pass_no=$_POST['v_pass_no'];
@@ -16,9 +16,9 @@
             $v_driver=$_POST['v_driver'];
             $v_dpic=$_FILES["v_dpic"]["name"];
 		        move_uploaded_file($_FILES["v_dpic"]["tmp_name"],"../vendor/img/".$_FILES["v_dpic"]["name"]);
-            $query="insert into tms_vehicle (v_name, v_pass_no, v_reg_no, v_driver, v_category, v_dpic, v_status ) values(?,?,?,?,?,?,?)";
+            $query="insert into tms_vehicle ( v_pass_no, v_reg_no, v_driver, v_category, v_dpic, v_status ) values(?,?,?,?,?,?,?)";
             $stmt = $mysqli->prepare($query);
-            $rc=$stmt->bind_param('sssssss', $v_name, $v_pass_no, $v_reg_no, $v_driver, $v_category, $v_dpic, $v_status);
+            $rc=$stmt->bind_param('sssssss', $v_pass_no, $v_reg_no, $v_driver, $v_category, $v_dpic, $v_status);
             $stmt->execute();
                 if($stmt)
                 {
@@ -86,16 +86,13 @@
         <div class="card-body">
           <!--Add User Form-->
           <form method ="POST" enctype="multipart/form-data"> 
-            <div class="form-group">
-                <label for="exampleInputEmail1">Vehicle Name</label>
-                <input type="text" required class="form-control" id="exampleInputEmail1" name="v_name">
-            </div>
+            
             <div class="form-group">
                 <label for="exampleInputEmail1">Vehicle Registration Number</label>
                 <input type="text" class="form-control" id="exampleInputEmail1" name="v_reg_no">
             </div>
             <div class="form-group">
-                <label for="exampleInputEmail1">Vehicle  Number Of Seats</label>
+                <label for="exampleInputEmail1">Tons</label>
                 <input type="text" class="form-control" id="exampleInputEmail1" name="v_pass_no">
             </div>
             <div class="form-group">
@@ -119,9 +116,7 @@
             <div class="form-group">
               <label for="exampleFormControlSelect1">Vehicle Category</label>
               <select class="form-control" name="v_category" id="exampleFormControlSelect1">
-                <option>Bus</option>
-                <option>Sedan</option>
-                <option>SUV</option>
+                <option>Lorry</option>
                 <option>Van</option>
 
               </select>

@@ -114,9 +114,8 @@
                 <thead>
                   <tr>
                     <th>#</th>
-                    <th>Vehicle Name</th>
                     <th>Reg No.</th>
-                    <th>Seats</th>
+                    <th>Tons</th>
                     <th>Driver</th>
                     <th>Status</th>
                   </tr>
@@ -135,7 +134,6 @@
                 ?>
                   <tr>
                     <td><?php echo $cnt;?></td>
-                    <td><?php echo $row->v_name;?></td>
                     <td><?php echo $row->v_reg_no;?></td>
                     <td><?php echo $row->v_ton;?></td>
                     <td><?php echo $row->v_driver;?></td>

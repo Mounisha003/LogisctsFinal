@@ -18,7 +18,7 @@
             //$u_source = $_POST['u_source'];
             //$u_destination = $_POST['u_destination'];
             //$u_book_date= $_POST['u_book_date'];
-           // $query="update 'tms_booking'('u_id', 'u_vehicle_number', 'u_driver_name', 'u_source', 'u_destination', 'u_book_date', 'u_book_status') VALUES ($u_vehicle_number,$u_driver_name,$u_source,$u_destination,$u_book_date,$u_book_status";
+           // $query="update tms_booking(u_id, u_vehicle_number, u_driver_name, u_source, u_destination, u_book_date, u_book_status) VALUES (?,?,?,?,?,?,?)";
            //$stmt = $mysqli->prepare($query);
            //$rc=$stmt->bind_param('ssssi', $u_vehicle_number, $u_driver_name, $u_source, $u_destination,$u_book_date, $u_id);
 

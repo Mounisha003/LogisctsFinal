@@ -133,10 +133,7 @@
             
          
 
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Vehicle Registration Number</label>
-              <select class="form-control" name="u_car_regno" id="exampleFormControlSelect1">
-                <?php
+              <?php
 
                 $ret="SELECT * FROM tms_booking  "; //sql code to get to all vehicles
                 $stmt= $mysqli->prepare($ret) ;

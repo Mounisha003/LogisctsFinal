@@ -109,50 +109,36 @@
         ?>
           <form method ="POST"> 
             <div class="form-group">
-                <label for="exampleInputEmail1">First Name</label>
-                <input type="text" value="<?php echo $row->u_fname;?>" required class="form-control" id="exampleInputEmail1" name="u_fname">
+                <label for="exampleInputEmail1">User Id</label>
+                <input type="text" value="<?php echo $row->user_id;?>" required class="form-control" id="exampleInputEmail1" name="user_id">
             </div>
             <div class="form-group">
-                <label for="exampleInputEmail1">Last Name</label>
-                <input type="text" class="form-control" value="<?php echo $row->u_lname;?>" id="exampleInputEmail1" name="u_lname">
+                <label for="exampleInputEmail1">Vehicle Number</label>
+                <input type="text" class="form-control" value="<?php echo $row->u_vehicle_number;?>" id="exampleInputEmail1" name="u_vehicle_number">
             </div>
             <div class="form-group">
-                <label for="exampleInputEmail1"></label>
-                <input type="text" class="form-control" value="<?php echo $row->u_phone;?>" id="exampleInputEmail1" name="u_phone">
+                <label for="exampleInputEmail1">Driver Name</label>
+                <input type="text" class="form-control" value="<?php echo $row->u_driver_name;?>" id="exampleInputEmail1" name="u_driver_name">
             </div>
             <div class="form-group">
-                <label for="exampleInputEmail1">Address</label>
-                <input type="text" class="form-control" value="<?php echo $row->u_addr;?>" id="exampleInputEmail1" name="u_addr">
+                <label for="exampleInputEmail1">Source</label>
+                <input type="text" class="form-control" value="<?php echo $row->u_source;?>" id="exampleInputEmail1" name="u_source">
             </div>
 
-            <div class="form-group" style="display:none">
-                <label for="exampleInputEmail1">Category</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" value="User" name="u_category">
+            <div class="form-group" >
+                <label for="exampleInputEmail1">Destination</label>
+                <input type="text" class="form-control" value="<?php echo $row->u_destination;?>" id="exampleInputEmail1" name="u_destination">
             </div>
             
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" value="<?php echo $row->u_email;?>" class="form-control" name="u_email"">
-            </div>
-
             
-
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Vehicle Category</label>
-              <select class="form-control" name="u_car_type" id="exampleFormControlSelect1">
-                <option>Bus</option>
-                <option>Matatu</option>
-                <option>Nissan</option>
-
-              </select>
-            </div>
+         
 
             <div class="form-group">
               <label for="exampleFormControlSelect1">Vehicle Registration Number</label>
               <select class="form-control" name="u_car_regno" id="exampleFormControlSelect1">
                 <?php
 
-                $ret="SELECT * FROM tms_vehicle  "; //sql code to get to all vehicles
+                $ret="SELECT * FROM tms_booking  "; //sql code to get to all vehicles
                 $stmt= $mysqli->prepare($ret) ;
                 $stmt->execute() ;//ok
                 $res=$stmt->get_result();
@@ -160,7 +146,7 @@
                 while($row=$res->fetch_object())
                 {
                 ?>
-                <option><?php echo $row->v_reg_no;?></option>
+                <option><?php echo $row->u_vehicle_number;?></option>
                 <?php }?> 
               </select>
             </div>
@@ -169,12 +155,12 @@
 
             <div class="form-group">
                 <label for="exampleInputEmail1">Booking Date</label>
-                <input type="date" class="form-control" id="exampleInputEmail1"  name="u_car_bookdate">
+                <input type="date" class="form-control" id="exampleInputEmail1"  name="u_book_date">
             </div>
 
             <div class="form-group">
               <label for="exampleFormControlSelect1">Booking Status</label>
-              <select class="form-control" name="u_car_book_status" id="exampleFormControlSelect1">
+              <select class="form-control" name="u_book_status" id="exampleFormControlSelect1">
                 <option>Approved</option>
                 <option>Pending</option>
               </select>

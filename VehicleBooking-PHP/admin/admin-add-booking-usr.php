@@ -12,13 +12,24 @@
             //$u_lname = $_POST['u_lname'];
             //$u_phone=$_POST['u_phone'];
             //$u_addr=$_POST['u_addr'];
-            $u_car_type = $_POST['u_car_type'];
-           $u_car_regno  = $_POST['u_car_regno'];
-            $u_car_bookdate = $_POST['u_car_bookdate'];
-            $u_car_book_status  = $_POST['u_car_book_status'];
-            $query="update tms_user set u_car_type=?, u_car_bookdate=?, u_car_regno=?, u_car_book_status=? where u_id=?";
+            // $u_car_type = $_POST['u_car_type'];
+            // $u_car_regno  = $_POST['u_car_regno'];
+            // $u_car_bookdate = $_POST['u_car_bookdate'];
+            // $u_car_book_status  = $_POST['u_car_book_status'];
+            // $query="update tms_user set u_car_type=?, u_car_bookdate=?, u_car_regno=?, u_car_book_status=? where u_id=?";
+            // $stmt = $mysqli->prepare($query);
+            // $rc=$stmt->bind_param('ssssi', $u_car_type, $u_car_bookdate, $u_car_regno, $u_car_book_status, $u_id);
+            
+            $u_vehicle_number= $_POST['u_vehicle_number'];
+            $u_driver_name  = $_POST['u_driver_name'];
+            $u_source = $_POST['u_source'];
+            $u_destination = $_POST['u_destination'];
+            $u_book_date= $_POST['u_book_date'];
+            $u_book_status="Booked";
+            $query= "INSERT INTO tms_booking (u_vehicle_number, u_driver_name, u_source, u_destination, u_book_date, u_book_status, user_id) VALUES (?,?,?,?,?,?,?)";
             $stmt = $mysqli->prepare($query);
-            $rc=$stmt->bind_param('ssssi', $u_car_type, $u_car_bookdate, $u_car_regno, $u_car_book_status, $u_id);
+            $rc=$stmt->bind_param('ssssssi', $u_vehicle_number, $u_driver_name, $u_source, $u_destination, $u_book_date, $u_book_status, $u_id);
+
             $stmt->execute();
                 if($stmt)
                 {
@@ -106,7 +117,7 @@
                 <input type="text" class="form-control" value="<?php echo $row->u_lname;?>" id="exampleInputEmail1" name="u_lname">
             </div>
             <div class="form-group">
-                <label for="exampleInputEmail1">Contact</label>
+                <label for="exampleInputEmail1"></label>
                 <input type="text" class="form-control" value="<?php echo $row->u_phone;?>" id="exampleInputEmail1" name="u_phone">
             </div>
             <div class="form-group">

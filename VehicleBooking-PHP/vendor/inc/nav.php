@@ -17,6 +17,10 @@
           </li>
 
           <li class="nav-item">
+            <a class="nav-link" href="https://www.google.com/maps/place/PRIYA+TRANSPORTS/@12.7093497,77.7982342,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae70831a8cc7f3:0x7762071dd67d8251!8m2!3d12.7092991!4d77.8004103">Location</a>
+          </li>
+
+          <li class="nav-item">
             <a class="nav-link" href="https://www.youtube.com/watch?v=nmo3FTYP7WY">Gallery</a>
           </li>
 

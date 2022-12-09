@@ -17,7 +17,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="gallery.php">Gallery</a>
+            <a class="nav-link" href="https://www.youtube.com/watch?v=nmo3FTYP7WY">Gallery</a>
           </li>
 
           <li class="nav-item dropdown">

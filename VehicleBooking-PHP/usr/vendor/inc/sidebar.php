@@ -29,7 +29,7 @@
 
                     </div>
                   </li>
-                  <li class="nav-item dropdown">
+                  <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-fw fa-bus"></i>
                       <span>Vehicles</span>
@@ -38,7 +38,7 @@
                       <h6 class="dropdown-header">Available Vehicles:</h6>
                       <a class="dropdown-item" href="usr-book-vehicle.php">Book</a>
                     </div>
-                  </li>
+                  </li> -->
 
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

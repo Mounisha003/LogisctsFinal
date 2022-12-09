@@ -95,7 +95,7 @@
                 <input type="text" class="form-control" id="exampleInputEmail1" name="v_reg_no">
             </div>
             <div class="form-group">
-                <label for="exampleInputEmail1">Vehicle  Number Of Seats</label>
+                <label for="exampleInputEmail1">Tons</label>
                 <input type="text" class="form-control" id="exampleInputEmail1" name="v_pass_no">
             </div>
             <div class="form-group">
@@ -119,9 +119,7 @@
             <div class="form-group">
               <label for="exampleFormControlSelect1">Vehicle Category</label>
               <select class="form-control" name="v_category" id="exampleFormControlSelect1">
-                <option>Bus</option>
-                <option>Sedan</option>
-                <option>SUV</option>
+                <option>Lorry</option>
                 <option>Van</option>
 
               </select>

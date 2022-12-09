@@ -99,7 +99,7 @@
           <form method ="POST" enctype="multipart/form-data"> 
             <div class="form-group">
                 <label for="exampleInputEmail1">Vehicle Name</label>
-                <input type="text" value="<?php echo $row->v_name;?>" required class="form-control" id="exampleInputEmail1" name="v_name">
+                <input type="text" value="<?php echo $row->v_name;?>"  id="exampleInputEmail1" name="v_name">
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Vehicle Registration Number</label>
@@ -114,9 +114,9 @@
             <div class="form-group">
               <label for="exampleFormControlSelect1">Vehicle Category</label>
               <select class="form-control" name="v_category" id="exampleFormControlSelect1">
-                <option>Bus</option>
-                <option>Matatu</option>
-                <option>Nissan</option>
+                <option>Lorry</option>
+                <option>Tata</option>
+                
 
               </select>
             </div>

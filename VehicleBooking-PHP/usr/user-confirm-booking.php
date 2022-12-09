@@ -115,16 +115,16 @@
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Source</label>
-                <input type="text" class="form-control"name="u_source">
+                <input type="text" class="form-control" required class="form-control"name="u_source">
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Destination</label>
-                <input type="text" class="form-control" name="u_destination">
+                <input type="text" class="form-control" required class="form-control" name="u_destination">
             </div>
             
             <div class="form-group">
                 <label for="exampleInputEmail1">Booking Date</label>
-                <input type="date" class="form-control" class="form-control" id="exampleInputEmail1"  name="u_book_date">
+                <input type="date" class="form-control" min="2022-12-09" max=" " class="form-control" required class="form-control" id="exampleInputEmail1"  name="u_book_date">
             </div>
             <div class="form-group" style="display:none">
                 <label for="exampleInputEmail1">Book Status</label>

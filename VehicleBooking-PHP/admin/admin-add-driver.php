@@ -91,15 +91,15 @@
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Last Name</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" name="u_lname">
+                <input type="text" class="form-control"  id="exampleInputEmail1" name="u_lname">
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Contact</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" name="u_phone">
+                <input type="text" class="form-control" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id="exampleInputEmail1" name="u_phone">
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Address</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" name="u_addr">
+                <input type="text" class="form-control"  required class="form-control" id="exampleInputEmail1" name="u_addr">
             </div>
 
             <div class="form-group" style="display:none">
@@ -109,7 +109,7 @@
             
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" name="u_email"">
+                <input type="email" class="form-control" required class="form-control" name="u_email"">
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>

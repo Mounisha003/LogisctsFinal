@@ -43,10 +43,10 @@
                 <thead>
                   <tr>
                     <th>#</th>
-                    <th>Name</th>
+                    <!-- <th>Name</th> -->
                     <th>Registration Number</th>
                     <th>Driver</th>
-                    <th>Passengers</th>
+                    <!-- <th>Passengers</th> -->
                     <th>Category</th>
                     <th>Status</th>
                   </tr>
@@ -64,10 +64,10 @@
                 <tbody>
                   <tr>
                     <td><?php echo $cnt;?></td>
-                    <td><?php echo $row->v_name;?></td>
+                    <!-- <td><?php echo $row->v_name;?></td> -->
                     <td><?php echo $row->v_reg_no;?></td>
                     <td><?php echo $row->v_driver;?></td>
-                    <td><?php echo $row->v_pass_no;?></td>
+                    <!-- <td><?php echo $row->v_pass_no;?></td> -->
                     <td><?php echo $row->v_category;?></td>
                     <td><?php if($row->v_status == "Available"){ echo '<span class = "badge badge-success">'.$row->v_status.'</span>'; } else { echo '<span class = "badge badge-danger">'.$row->v_status.'</span>';}?></td>
                   </tr>

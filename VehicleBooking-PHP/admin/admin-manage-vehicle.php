@@ -85,7 +85,7 @@
                 <thead>
                 <tr>
                     <th>#</th>
-                    <th>Name</th>
+                    <!-- <th>Name</th> -->
                     <th>Registration Number</th>
                     <th>Driver</th>
                     <th>Status</th>
@@ -104,7 +104,7 @@
                 <tbody>
                   <tr>
                     <td><?php echo $cnt;?></td>
-                    <td><?php echo $row->v_name;?></td>
+                    <!-- <td><?php echo $row->v_name;?></td> -->
                     <td><?php echo $row->v_reg_no;?></td>
                     <td><?php echo $row->v_driver;?></td>
                     <td>

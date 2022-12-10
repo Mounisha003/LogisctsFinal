@@ -134,8 +134,8 @@
               </div>
               <div class="col-md-4">
                 <div class="form-label-group">
-                <input type="text" class="form-control" id="exampleInputEmail1" name="u_phone">
-                  <label for="lastName">Contact</label>
+                <input type="tel" class="form-control"  pattern="[6789][0-9]{9} id="exampleInputEmail1" name="u_phone">
+                  <label for="contact">Contact</label>
                 </div>
               </div>
             </div>

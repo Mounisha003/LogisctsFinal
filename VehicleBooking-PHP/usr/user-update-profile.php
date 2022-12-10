@@ -107,7 +107,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Contact</label>
-                <input type="text" class="form-control" value="<?php echo $row->u_phone;?>" id="exampleInputEmail1" name="u_phone">
+                <input type="text" class="form-control" pattern="[6789][0-9]{9}"value=<?php echo $row->u_phone;?>" id="exampleInputEmail1" name="u_phone">
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Address</label>

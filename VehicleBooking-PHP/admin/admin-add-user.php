@@ -95,7 +95,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Contact</label>
-                <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="form-control" required class="form-control" id="exampleInputEmail1" name="u_phone">
+                <input type="tel" pattern="[6789][0-9]{9}" class="form-control" required class="form-control" id="exampleInputEmail1" name="u_phone">
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Address</label>
